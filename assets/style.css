@@ -2,6 +2,55 @@
     margin: 0px;
 }
 
+
+/********************************************************************************/
+
+
+/* ELEMENT SELECTORS */
+
+
+/********************************************************************************/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #C5BCCE;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 200px;
+    color: #3505CB;
+    margin: 0px auto;
+}
+
+form label input {
+    margin: auto;
+}
+
+
+/********************************************************************************/
+
+
+/* CLASS SELECTORS */
+
+
+/********************************************************************************/
+
+.nav-container {
+    height: 100px;
+}
+
+.home-container {
+    height: calc(100vh -100px);
 }

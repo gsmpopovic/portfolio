@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href='./assets/style.css' type='text/css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./style.css" >
 </head>
 <body>
-    <?php include('nav.php')?>
+    <div class='head-container'> 
+    </div>
     <main>
-        <h1>HELLO</h1>
+        <div class='home-container'> 
+            <div class='split-left'>
+                <h1 class='hello'>HE</h1>
+                <h1 class='hello'>LLO.<h1>
+            </div>
+            <div class='split-right'>
+            <?php include_once('nav.php')?>
+
+            </div>
+
+        </div>
     </main> 
 </body>
 </html>
