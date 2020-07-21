@@ -11,7 +11,7 @@
     <div class='head-container'> 
     <div class='split-head'></div>
     </div>
-    <main>
+    <main class='home-main'>
         <div class='home-container'> 
             <div class='split-left'>
                 <h1 id='hello'>Hello.<h1>

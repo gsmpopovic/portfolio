@@ -1,3 +1,5 @@
+/* Applies to all pages */
+
 * {
     margin: 0px;
 }
@@ -15,7 +17,11 @@ body {
     font-family: 'Telex', sans-serif;
 }
 
-main {
+
+/* Applies to Home and About*/
+
+.home-main,
+.about-main {
     min-height: calc(100vh - 72px);
     height: calc(100vh - 72px);
     min-width: 100%;
@@ -78,11 +84,12 @@ a {
     font-size: 5em;
 }
 
-p {
-    font-size: 1em;
-    text-align: center;
-}
-
 a:hover {
     color: grey;
 }
+
+
+/*************************************************************/
+
+
+/*Applies to Work */
