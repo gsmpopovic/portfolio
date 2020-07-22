@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href='./style.css' type='text/css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <?php include('nav.php')?>
-    <h1>Contact</h1>
+
+<div class='split-top'>
+<h1>Contact</h1>
+<div class='split-left'>
 
     <h2>If you'd like to send me a message,</h2>
     <form action='index.php' method='POST'>
@@ -27,9 +31,18 @@
         <label>Message
             <br>
         <textarea col='50' row='50' name='msg'placeholder="What's up?"></textarea></label>
-        <br> 
+        <br>
+        <input type='submit' value='Say hello'>
     </form>
+</div> 
+<div class='split-rght'>
  <h2>If you'd like to schedule a call,</h2>
  <h3>Calendy</h3>
+</div> 
+</div>
+
+<div class='split-bottom'>
+               <?php include('nav.php')?>
+            </div>
 </body>
 </html>
