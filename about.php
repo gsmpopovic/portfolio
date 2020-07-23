@@ -5,12 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>About Me</title>
       <link href='./style.css' type='text/css' rel='stylesheet'>
-      <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
-
    </head>
    <body>
       <main>
-            <div class='split-top'>
+            <div class='split-top' id='background2'>
             <h1>About Me</h1>
                <div class='cols'> 
 
