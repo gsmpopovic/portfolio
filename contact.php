@@ -7,7 +7,7 @@
       <link href='./style.css' type='text/css' rel='stylesheet'>
    </head>
    <body>
-      <div class='split-top' id='background4'>
+      <div class='split-top' id='background4' id='rows'>
          <h1>Contact</h1>
          <div class='split-left'>
             <?php require_once('process.php'); ?>
@@ -32,7 +32,7 @@
                <input type='submit' value='Say hello' style="margin-top: 20px;">
             </form>
          </div>
-         <div class='split-rght'>
+         <div class='split-right'>
             <h2>If you'd like to schedule a call,</h2>
             <h3>Calendy</h3>
          </div>

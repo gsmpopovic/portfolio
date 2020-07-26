@@ -20,7 +20,7 @@ function submit_msg(){
         $msg = $_POST['msg'];
 
         // MYSQL query
-        $sql="INSERT INTO `info`(`id`, `firstName`, `lastName`, `email`, `msg`) 
+        $sql="INSERT INTO `info`(`firstName`, `lastName`, `email`, `msg`) 
         VALUES ('$firstName',
         '$lastName', 
         '$email',
@@ -28,11 +28,12 @@ function submit_msg(){
     }
 
     if (mysqli_query($connection, $sql)) {
-        echo "Form sent!";
+        echo "<div> Form sent! </div>";
     }
     else{
     echo "Error: " .mysqli_errno($connection);
     }
+    
     mysqli_close($connection);
     header('Location: contact.php');
 
