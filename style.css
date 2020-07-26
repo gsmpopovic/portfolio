@@ -73,6 +73,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #f3f0f0;
 }
 
 .cols {
@@ -82,7 +83,14 @@ main {
     width: 90%;
 }
 
-.rows {
+.ac,
+.wc {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+
+/* .rows {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,7 +115,7 @@ main {
 
 #item2 {
     content: url(./assets/img/tpc.png);
-}
+} */
 
 .split-left {
     min-height: 100%;
@@ -131,6 +139,9 @@ main {
     justify-content: space-evenly;
 }
 
+
+/* Navigation */
+
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -147,11 +158,8 @@ a:hover {
     opacity: 0.75;
 }
 
-.ac,
-.wc {
-    margin-bottom: 20px;
-    padding: 0px 20px;
-}
+
+/* Headings */
 
 h1 {
     color: #f3f0f0;
@@ -170,6 +178,9 @@ form {
     font-size: 10em;
 }
 
+
+/* Backgrounds */
+
 #background1 {
     background-image: url(dos.jpg);
     background-size: cover;
@@ -183,6 +194,12 @@ form {
 }
 
 #background3 {
+    background-image: url(diogenes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#background4 {
     background-image: url(diogenes.jpg);
     background-size: cover;
     background-repeat: no-repeat;

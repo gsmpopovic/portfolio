@@ -7,7 +7,7 @@
       <link href='./style.css' type='text/css' rel='stylesheet'>
    </head>
    <body>
-      <div class='split-top'>
+      <div class='split-top' id='background4'>
          <h1>Contact</h1>
          <div class='split-left'>
             <?php require_once('process.php'); ?>
@@ -38,7 +38,7 @@
          </div>
       </div>
       <div class='split-bottom'>
-         <?php include('nav.php')?>
+         <?php include_once('nav.php')?>
       </div>
    </body>
 </html>
