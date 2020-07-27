@@ -4,18 +4,16 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Work</title>
-      <link href='./style.css' type='text/css' rel='stylesheet'>
+      <link href='./assets/css/style.css' type='text/css' rel='stylesheet'>
    </head>
    <body>
-      <main>
-         <div class='split-top' id='background3'>
-         <h1>My Work</h1>
-
+      <main id='background3'>
+         <h1 id='work'>My Work</h1>
+         <div class='split-top'>
             <div class='cols'>
                <div  class='wc'>
                   <h2> <a href='https://github.com/gsmpopovic/plaCRUD' target="_blank">Attic Idioms in Plato's Works</a></h2>
                   <p>This is a CRUD application which stores and presents information regarding specific idioms of Attic Greek(the dialect of Greek spoken by the ancient Athenians) that appear in the Ancient Greek philosopher Plato's dialogues. It currently stores idioms from his dialogue, the <i>Meno</i>.</p>
-               
                </div>
                <div class='wc'>
                   <h2><a href='https://github.com/gsmpopovic/thePerfectCup' target="_blank">The Perfect Cup</a></h2>

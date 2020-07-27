@@ -3,6 +3,7 @@
 * {
     font-family: 'Telex';
     margin: 0px;
+    padding: 0px;
 }
 
 html,
@@ -16,7 +17,6 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Telex', sans-serif;
-    color: #f3f0f0;
 }
 
 main {
@@ -59,28 +59,45 @@ main {
 h1 {
     color: #f3f0f0;
     font-size: 3em;
-}
-
-h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-form {
-    margin: 0px auto;
+h2 {
+    color: #f3f0f0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #hello {
     font-size: 10em;
 }
 
+#contact,
+#about {
+    text-align: center;
+}
+
 
 /* Split screen and column structure */
 
-.split-top {
+.split-top-contact {
     min-height: 80vh;
     height: 80vh;
     min-width: 100vw;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.split-top {
+    min-height: 80vh;
+    height: 80vh;
+    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,8 +107,8 @@ form {
 .split-bottom {
     min-height: 20vh;
     height: 20vh;
-    min-width: 100vw;
-    width: 100vw;
+    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,10 +121,6 @@ form {
     height: 100%;
     min-width: 50%;
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 .split-right {
@@ -115,50 +128,25 @@ form {
     height: 100%;
     min-width: 50%;
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 .cols {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .ac,
-.wc {
+.wc,
+.cc {
     margin-bottom: 20px;
     padding: 0px 20px;
 }
 
-#rows {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-.row1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-.row-item {
-    width: 50%;
-    margin: 10px;
-}
-
-#item1 {
-    content: url(./assets/img/plaCRUD1.png);
-}
-
-#item2 {
-    content: url(./assets/img/tpc.png);
+.cc {
+    height: 33%;
+    text-align: center;
 }
 
 
@@ -183,30 +171,49 @@ a:hover {
 
 /* Backgrounds */
 
-#background1 {
-    background-image: url(./assets/img/dos.jpg);
+#background1,
+#background2,
+#background3,
+#background4 {
+    background: #000000;
+}
+
+
+/* #background1 {
+    background-image: url(../img/dos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #background2 {
-    background-image: url(./assets/img/athens.jpg);
+    background-image: url(../img/athens.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #background3 {
-    background-image: url(./assets/img/diogenes.jpg);
+    background-image: url(../img/diogenes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #background4 {
-    background-image: url(./assets/img/diogenes.jpg);
+    background-image: url(../img/diogenes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+} */
+
+
+/* Elements */
+
+form {
+    background: grey;
+    padding: 20px 0px;
+    text-align: center;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    color: #f3f0f0;
+    text-align: center;
 }

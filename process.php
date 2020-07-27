@@ -21,10 +21,10 @@ function submit_msg(){
 
         // MYSQL query
         $sql="INSERT INTO `info`(`firstName`, `lastName`, `email`, `msg`) 
-        VALUES ('$firstName',
-        '$lastName', 
-        '$email',
-        '$msg')";
+        VALUES ($firstName,
+        $lastName, 
+        $email,
+        $msg)";
     }
 
     if (mysqli_query($connection, $sql)) {
@@ -35,7 +35,7 @@ function submit_msg(){
     }
     
     mysqli_close($connection);
-    header('Location: contact.php');
+    header('Location: ./contact.php');
 
 }
 
