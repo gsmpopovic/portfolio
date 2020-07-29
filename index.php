@@ -10,7 +10,7 @@
       <main>
          <div class='split-top' id='background1'>
             <h1 id='hello'>
-            Hello,
+            echo '<b style='color:#39ff14;'>Hello,</b>';
             <h1>
          </div>
          <div class='split-bottom'>

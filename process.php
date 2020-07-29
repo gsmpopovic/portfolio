@@ -2,29 +2,31 @@
 function submit_msg(){
 
 // Connect to DB
-    $host = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'contacts';
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "contacts";
+    $table="info";
     $connection = mysqli_connect($host, $username, $password, $database);
 
     if (!$connection) {
         echo "Error: ".mysqli_error($connection);
+        die();
     } else {
 
-    //Form inputs
+    //Form inputs with sanitization 
 
-        $firstName = $_POST['firstName'];
-        $lastName = $_POST['lastName'];
-        $email = $_POST['email'];
-        $msg = $_POST['msg'];
+    $firstName = filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
+    $lastName = filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+    $msg = filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
 
         // MYSQL query
-        $sql="INSERT INTO `info`(`firstName`, `lastName`, `email`, `msg`) 
-        VALUES ($firstName,
-        $lastName, 
-        $email,
-        $msg)";
+        $sql="INSERT INTO $table(firstName, lastName, email, msg) 
+        VALUES ('$firstName',
+        '$lastName', 
+        '$email',
+        '$msg')"; 
     }
 
     if (mysqli_query($connection, $sql)) {
@@ -35,7 +37,8 @@ function submit_msg(){
     }
     
     mysqli_close($connection);
-    header('Location: ./contact.php');
+
+    header("location: contact.php");
 
 }
 
