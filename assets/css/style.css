@@ -136,6 +136,7 @@ a:hover {
 }
 
 #nava {
+    /*Anchor tag in nav, as opposed to those in body */
     color: #fbfbfb;
 }
 

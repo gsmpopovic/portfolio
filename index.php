@@ -9,11 +9,13 @@
    </head>
    <body>
       <header>
-            <?php include('nav.php')?>
-</header>
-<main>
+         <?php include('nav.php')?>
+      </header>
+      <main>
          <div>
-            <h1 class='h'>print('Hello,')<h1>
+            <h1 class='h'>
+            print('Hello,')
+            <h1>
          </div>
       </main>
    </body>
