@@ -1,16 +1,16 @@
-<nav>
+<nav id='w100'>
     <ul>
         <li>
-            <a href='index.php'>Home</a> 
+            <a href='index.php' id='nava'>Home</a> 
         </li>
         <li>
-            <a href='about.php'>About</a> 
+            <a href='about.php' id='nava'>About</a> 
         </li>
         <li>
-            <a href='work.php'>Work</a> 
+            <a href='work.php' id='nava'>Work</a> 
         </li>
         <li>
-            <a href='contact.php'>Contact</a> 
+            <a href='contact.php' id='nava'>Contact</a> 
         </li>
     </ul> 
 </nav> 

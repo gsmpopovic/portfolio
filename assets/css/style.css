@@ -1,3 +1,23 @@
+/*
+-------------------
+Color pallette
+-------------------
+background: #fbfbfb;
+color: #333; 
+*/
+
+
+/*
+-------------------
+fonts 
+-------------------
+
+font-family: 'Karla', sans-serif;
+font-family: 'Vollkorn', serif;
+
+*/
+
+
 /* Applies to all pages */
 
 * {
@@ -7,125 +27,38 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
-    width: 100vw;
-    min-height: 100vh;
-    height: 100vh;
-    font-family: 'Telex', sans-serif;
-}
-
-main {
     min-height: 100%;
     height: 100%;
     min-width: 100%;
     width: 100%;
+    background: #fbfbfb;
+    color: #333;
+    cursor: auto;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+    overflow-y: hidden;
 }
 
-
-/* Typography */
-
-
-/* latin-ext */
-
-@font-face {
-    font-family: 'Telex';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Telex Regular'), local('Telex-Regular'), url(https://fonts.gstatic.com/s/telex/v8/ieVw2Y1fKWmIO-faDVtSKA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-
-/* latin */
-
-@font-face {
-    font-family: 'Telex';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Telex Regular'), local('Telex-Regular'), url(https://fonts.gstatic.com/s/telex/v8/ieVw2Y1fKWmIO-fUDVs.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+main {
+    min-height: calc(100%-192px);
+    height: calc(100%-192px);
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 
 /* Headings */
 
-h1 {
-    color: #39ff14;
-    font-size: 3em;
+.h {
+    font-family: 'Vollkorn', serif;
+    font-size: 5em;
     text-align: center;
 }
 
-h2 {
-    color: #39ff14;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #39ff14;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#hello {
-    font-size: 10em;
-}
-
-
-/* Split screen and column structure */
-
-.split-top-contact {
-    min-height: 80%;
-    height: 80%;
-    min-width: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.split-top {
-    min-height: 80%;
-    height: 80%;
-    min-width: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.split-bottom {
-    min-height: 20%;
-    height: 20%;
-    min-width: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-*/ .split-left {
-    min-height: 100%;
-    height: 100%;
-    min-width: 50%;
-    width: 50%;
-}
-
-.split-right {
-    min-height: 100%;
-    height: 100%;
-    min-width: 50%;
-    width: 50%;
-}
+#hello {}
 
 
 /* Column structure */
@@ -134,98 +67,105 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+
+/* Modular height and width */
+
+#w25 {
+    width: 25%;
+}
+
+#w33 {
+    width: 33%;
+}
+
+#w40 {
+    width: 40%;
+}
+
+#w100 {
     width: 100%;
 }
 
-
-/* General margin and padding */
-
-.mp {
-    margin-bottom: 20px;
-    padding: 0px 20px;
+#h40 {
+    height: 40%;
 }
 
 
-/* Columns on contact page */
+/*Modular margin and padding */
 
-.cc {
-    height: 33%;
-    text-align: center;
+#mb30 {
+    margin-bottom: 30px;
 }
 
 
 /* Navigation */
 
+nav {
+    background: #333;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 nav ul li {
     list-style: none;
-    display: inline-block;
 }
 
 a {
-    color: #000000;
+    color: #333;
     text-decoration: none;
-    padding: 0px 30px;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
 }
 
 a:hover {
-    color: grey;
+    color: gold;
+}
+
+#nava {
+    color: #fbfbfb;
 }
 
 
-/* Backgrounds */
-
-#background1,
-#background2,
-#background3,
-#background4 {
-    background: #000000;
-}
-
-
-/* #background1 {
-    background-image: url(../img/dos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#background2 {
-    background-image: url(../img/athens.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#background3 {
-    background-image: url(../img/diogenes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#background4 {
-    background-image: url(../img/diogenes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-
-/* Elements */
+/* form */
 
 form {
-    background: grey;
-    padding: 20px 0px;
-    text-align: center;
-}
-
-p {
-    font-size: 1.4em;
-    color: #f3f0f0;
     text-align: center;
 }
 
 
-/* Media queries */
+/* Media Queries */
 
 @media screen and (max-width: 732px) {
-    /* *** */
+    .cols,
+    .rows {
+        display: block;
+        text-align: center;
+    }
+    #w25,
+    #w33,
+    #w40,
+    #w100 {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

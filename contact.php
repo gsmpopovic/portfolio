@@ -5,12 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Contact</title>
       <link href='./assets/css/style.css' type='text/css' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css2?family=Karla&family=Vollkorn&display=swap" rel="stylesheet">
    </head>
    <body>
-      <main id='background4'>
-         <h1>Contact</h1>
-         <div class='split-top-contact'>
-            <div class='split-left'>
+   <header>
+            <?php include('nav.php')?>
+         <h1 class='h'>Contact</h1>
+</header>
+      <main>
+         <div class='cols' id='w100'>
+            <div id='mb30'>
+               <div>
                <h2>If you'd like to send me a message,</h2>
                <form action="process.php" method="POST">
                   <label>First name
@@ -32,27 +37,25 @@
                   <input type="submit" name='submit' value="Say hello" style="margin-top: 20px;">
                </form>
                <?php require_once('process.php')?>
+</div>
             </div>
-            <div class='split-right'>
-               <div class='cc'>
+            <div id='w100' id='h50'class='rows' >
+            <div id='w25'>
                   <h2>If you'd like to chat,</h2>
                   <!-- Calendly link widget begin -->
-                  <h3>
                      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/georgesmpopovic/15min'});return false;" class='link'>Schedule time with me</a> 
-                  </h3>
+                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/georgesmpopovic/15min'});return false;" class='link'>Calendy</a> 
                   <!-- Calendly link widget end -->
-               </div>
-               <div class='cc'>
+            </div> 
+              <div id='25'>
                   <h2> Check out my writing, </h2>
-                  <h3>
-                  <a href='https://medium.com/@gpopovic' target="_blank" class='link'>Medium</a></h3>
+                  <a href='https://medium.com/@gpopovic' target="_blank" class='link'>Medium</a>
                </div>
-            </div>
-         </div>
-         <div class='split-bottom'>
-            <?php include_once('nav.php')?>
+               <div id='w25'>
+                  <h2> Take a look at my LinkedIn, </h2>
+                  <a href='https://www.linkedin.com/in/george-popovic-b37b92185/' target="_blank" class='link'>LinkedIn</a>
+               </div>
          </div>
       </main>
    </body>
