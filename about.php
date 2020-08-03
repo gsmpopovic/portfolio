@@ -21,7 +21,7 @@
                   <p>I'm an aspiring web developer from NYC, and my work is done through the WAMP stack (PHP is my backend language).</p>
                </div>
                <div id='w25'>
-                  <h2 class='em'>My background</h2>
+                  <h2 class='em'>My story</h2>
                   <p>I have a BA in Classical Languages and Philosophy from Fordham University (2019), and have been interested in web development and programming in general since June of 2018.</p>
                </div>
                <div id='w25'>

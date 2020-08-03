@@ -15,26 +15,27 @@
       <main>
          <div class='cols' id='w100'>
          <div id='mb30'>
-            <div>
+            <div class='center'>
                <h2>If you'd like to send me a message,</h2>
+               <p class='rq'> all fields are required</p>
                <form action="process.php" method="POST">
                   <label>First name
                   <br>
-                  <input type='text' name='firstName'placeholder='Enter your first name'></label>
+                  <input type='text' name='firstName'placeholder='Enter your first name' id='p10' required></label>
                   <br>
                   <label>Last name
                   <br>
-                  <input type="text" name="lastName" placeholder='Enter your last name'></label>
+                  <input type="text" name="lastName" placeholder='Enter your last name' id='p10' required></label>
                   <br>
                   <label>E-mail
                   <br>
-                  <input type="email" name="email" placeholder="Enter your e-mail"></label>
+                  <input type="email" name="email" placeholder="Enter your e-mail" id='p10' required></label>
                   <br>
                   <label>Message
                   <br>
-                  <textarea col="50" row="50" name="msg" placeholder="What's up?"></textarea></label>
+                  <textarea cols="50" rows="5" name="msg" placeholder="What's up?" id='p10' required></textarea></label>
                   <br>
-                  <input type="submit" name="submit" id="submit" value="Say hello" style="margin-top: 20px;">
+                  <input type="submit" name="submit" id="submit" value="Say hello" id='mt20' required>
                </form>
                <?php require_once('process.php')?>
             </div>

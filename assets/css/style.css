@@ -36,7 +36,7 @@ body {
     cursor: auto;
     font-family: 'Karla', sans-serif;
     line-height: 1.5;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 main {
@@ -52,6 +52,10 @@ main {
 
 /* Headings */
 
+h1, h2, h3 {
+    font-weight: 300;
+
+}
 .h {
     padding-top: 100px; /* To push heading down from nav */ 
     font-family: 'Vollkorn', serif;
@@ -60,7 +64,12 @@ main {
 }
 
 .em{/*Applies only to h2s on about.php*/ 
-    font-size: 4em;
+    font-size: 4.5em;
+}
+
+#hello{
+    padding-top: 200px; 
+    font-size: 10em;
 }
 
 /* Column structure */
@@ -79,7 +88,9 @@ main {
     flex-wrap: nowrap;
 }
 
-
+.center {
+    text-align: center;
+}
 /* Modular height and width */
 
 #w25 {
@@ -107,6 +118,14 @@ main {
 
 #mb30 {
     margin-bottom: 30px;
+}
+
+#p10{
+    padding: 10px;
+}
+
+#mt20{
+    margin-top: 20px;
 }
 
 
@@ -150,6 +169,9 @@ form {
     text-align: center;
 }
 
+.rq {
+    color: red; 
+}
 #submit {
     height: 50px; 
     width: 100px; 
@@ -166,6 +188,7 @@ form {
         display: block;
         text-align: center;
     }
+
     #w25,
     #w33,
     #w40,
@@ -173,10 +196,15 @@ form {
         width: 100%;
         padding: 10px 0px;
     }
+
     ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #hello{
+        font-size: 5em;
     }
 }
