@@ -34,7 +34,7 @@
                   <br>
                   <textarea col="50" row="50" name="msg" placeholder="What's up?"></textarea></label>
                   <br>
-                  <input type="submit" name='submit' value="Say hello" style="margin-top: 20px;">
+                  <input type="submit" name="submit" id="submit" value="Say hello" style="margin-top: 20px;">
                </form>
                <?php require_once('process.php')?>
             </div>
