@@ -44,7 +44,7 @@
          </div>
          <div id="w100" id="h50"class="rows" >
             <div id="w25">
-               <h2>If you"d like to chat,</h2>
+               <h2>If you'd like to chat,</h2>
                <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
