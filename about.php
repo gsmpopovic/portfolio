@@ -18,7 +18,8 @@
             <div class='rows'>
                <div id='w25'>
                   <h2 class='em'>Who am I?</h2>
-                  <p>I'm an aspiring web developer from NYC, and my work is done through the WAMP stack (PHP is my backend language).</p>
+                  <p>I'm an aspiring web developer from NYC, and my work is done through the WAMP/LAMP stack.</p>
+               
                </div>
                <div id='w25'>
                   <h2 class='em'>My story</h2>

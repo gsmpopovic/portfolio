@@ -34,7 +34,7 @@ body {
     background: #fbfbfb;
     color: #333;
     cursor: auto;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Vollkorn', serif;
     line-height: 1.5;
     /* overflow-y: hidden; */
 }
@@ -46,19 +46,18 @@ main {
     width: 100%;
     display: flex;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
 /* Headings */
 
-h1, h2, h3 {
+h2, h3 {
     font-weight: 300;
 
 }
 .h {
     padding-top: 100px; /* To push heading down from nav */ 
-    font-family: 'Vollkorn', serif;
     font-size: 5em;
     text-align: center;
 }
@@ -70,6 +69,13 @@ h1, h2, h3 {
 #hello{
     padding-top: 200px; 
     font-size: 10em;
+}
+
+/* tEXT */
+
+p{
+    font-family: 'Karla', sans-serif;
+
 }
 
 /* Column structure */
@@ -141,20 +147,17 @@ ul {
     justify-content: space-evenly;
 }
 
+
 nav ul li {
     list-style: none;
+
 }
 
 a {
-    font-family: 'Vollkorn', serif;
     color: #333;
     text-decoration: none;
     font-size: 3em;
     font-weight: 300;
-}
-
-a:hover {
-    color: gold;
 }
 
 #nava {
@@ -162,6 +165,12 @@ a:hover {
     color: #fbfbfb;
 }
 
+
+
+a:hover, #nava:hover {
+    color: gold;
+    cursor: pointer;
+}
 
 /* form */
 
@@ -172,11 +181,14 @@ form {
 .rq {
     color: red; 
 }
+
 #submit {
     height: 50px; 
     width: 100px; 
     background-color: #333;
     color: #fbfbfb;
+    border-radius: 10px 0px 10px 0px;
+    cursor: pointer;
 }
 
 
