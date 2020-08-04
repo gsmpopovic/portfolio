@@ -131,13 +131,14 @@ a {
     font-weight: 300;
 }
 
-a:hover {
-    color: gold;
-}
-
 #nava {
     /*Anchor tag in nav, as opposed to those in body */
     color: #fbfbfb;
+}
+
+#nava:hover,
+a:hover {
+    color: gold
 }
 
 
