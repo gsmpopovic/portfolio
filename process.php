@@ -7,12 +7,12 @@ function submit_msg(){
     $password = "";
     $database = "contacts";
     $table="info";
-    $connection = mysqli_connect($host, $username, $password, $database);
+    $connection = new mysqli($host, $username, $password, $database);
 
-    if (!$connection) {
-        echo "Error: ".mysqli_error($connection);
-        die();
-    } else {
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+    else {
 
     //Form inputs with sanitization 
 
@@ -29,14 +29,14 @@ function submit_msg(){
         '$msg')"; 
     }
 
-    if (mysqli_query($connection, $sql)) {
-        echo "<div> Form sent! </div>";
+    if ($connection->query($sql)) {
+        echo "Form sent!";
     }
     else{
-    echo "Error: " .mysqli_errno($connection);
+    echo "Error: " .$connection->errno();
     }
     
-    mysqli_close($connection);
+    $connection->close();
 
     header("location: contact.php");
 

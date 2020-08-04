@@ -34,9 +34,9 @@ body {
     background: #fbfbfb;
     color: #333;
     cursor: auto;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Vollkorn', serif;
     line-height: 1.5;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 main {
@@ -46,20 +46,37 @@ main {
     width: 100%;
     display: flex;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
 /* Headings */
 
+h2, h3 {
+    font-weight: 300;
+
+}
 .h {
-    font-family: 'Vollkorn', serif;
+    padding-top: 100px; /* To push heading down from nav */ 
     font-size: 5em;
     text-align: center;
 }
 
-#hello {}
+.em{/*Applies only to h2s on about.php*/ 
+    font-size: 4.5em;
+}
 
+#hello{
+    padding-top: 200px; 
+    font-size: 10em;
+}
+
+/* tEXT */
+
+p{
+    font-family: 'Karla', sans-serif;
+
+}
 
 /* Column structure */
 
@@ -77,7 +94,9 @@ main {
     flex-wrap: nowrap;
 }
 
-
+.center {
+    text-align: center;
+}
 /* Modular height and width */
 
 #w25 {
@@ -107,6 +126,14 @@ main {
     margin-bottom: 30px;
 }
 
+#p10{
+    padding: 10px;
+}
+
+#mt20{
+    margin-top: 20px;
+}
+
 
 /* Navigation */
 
@@ -120,8 +147,10 @@ ul {
     justify-content: space-evenly;
 }
 
+
 nav ul li {
     list-style: none;
+
 }
 
 a {
@@ -142,10 +171,29 @@ a:hover {
 }
 
 
+
+a:hover, #nava:hover {
+    color: gold;
+    cursor: pointer;
+}
+
 /* form */
 
 form {
     text-align: center;
+}
+
+.rq {
+    color: red; 
+}
+
+#submit {
+    height: 50px; 
+    width: 100px; 
+    background-color: #333;
+    color: #fbfbfb;
+    border-radius: 10px 0px 10px 0px;
+    cursor: pointer;
 }
 
 
@@ -157,6 +205,7 @@ form {
         display: block;
         text-align: center;
     }
+
     #w25,
     #w33,
     #w40,
@@ -164,10 +213,15 @@ form {
         width: 100%;
         padding: 10px 0px;
     }
+
     ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #hello{
+        font-size: 5em;
     }
 }

@@ -17,15 +17,16 @@
          <div>
             <div class='rows'>
                <div id='w25'>
-                  <h2>Who am I?</h2>
-                  <p>I'm an aspiring web developer from NYC, and my work is done through the WAMP stack (PHP is my backend language).</p>
+                  <h2 class='em'>Who am I?</h2>
+                  <p>I'm an aspiring web developer from NYC, and my work is done through the WAMP/LAMP stack.</p>
+               
                </div>
                <div id='w25'>
-                  <h2>My background</h2>
+                  <h2 class='em'>My story</h2>
                   <p>I have a BA in Classical Languages and Philosophy from Fordham University (2019), and have been interested in web development and programming in general since June of 2018.</p>
                </div>
                <div id='w25'>
-                  <h2>My interests</h2>
+                  <h2 class='em'>My interests</h2>
                   <p> As a developer with a background in Classical Languages and Philosophy, 
                      I'm very interested in their intersection, the "digital humanities", 
                      and how web technologies and procedures can be used to display, 
