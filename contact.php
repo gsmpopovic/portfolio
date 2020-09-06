@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Contact</title>
+      <link href='./assets/css/bootstrap.css' type='text/css' rel='stylesheet'>
       <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Karla&family=Vollkorn&display=swap" rel="stylesheet">
       <!-- Font awesome link below --> 
@@ -20,7 +21,7 @@
             <div class="center">
                <h2>If you'd like to send me a message,</h2>
                <p class="rq"> all fields are required</p>
-               <form action="./assets/inc/process.php" method="POST">
+               <form action="./assets/inc/process_json.php" method="POST">
                   <label>First name
                   <br>
                   <input type="text" name="firstName"placeholder="Enter your first name" id="p10" required></label>
@@ -39,7 +40,7 @@
                   <br>
                   <input type="submit" name="submit" id="submit" value="Say hello" id="mt20" required>
                </form>
-               <?php require_once("process.php")?>
+               <?php require_once("./assets/inc/process_json.php")?>
             </div>
          </div>
          <div id="w100" id="h50"class="rows" >

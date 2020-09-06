@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Work</title>
+      <link href='./assets/css/bootstrap.css' type='text/css' rel='stylesheet'>
       <link href='./assets/css/style.css' type='text/css' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css2?family=Karla&family=Vollkorn&display=swap" rel="stylesheet">
 <!-- Font awesome link below --> 
