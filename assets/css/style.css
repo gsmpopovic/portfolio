@@ -12,12 +12,6 @@ color: #333;
 fonts 
 -------------------
 
-font-family: 'Karla', sans-serif;
-font-family: 'Vollkorn', serif;
-
-*/
-
-
 /* Applies to all pages */
 
 * {
@@ -91,7 +85,7 @@ p{
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .center {

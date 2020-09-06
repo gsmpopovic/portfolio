@@ -12,11 +12,11 @@
    </head>
    <body>
       <header>
-         <?php include('nav.php')?>         
+         <?php include_once('./assets/inc/nav.php')?>         
          <h1 class='h'>My Work</h1>
       </header>
       <main>
-         <div>
+         <div class="cols">
             <div class='rows'>
                <div id='w40'>
                   <h2> <a href='https://github.com/gsmpopovic/plaCRUD' target="_blank"> <i class="fab fa-github-square"></i> Idiomatic Plato</a></h2>
@@ -29,6 +29,11 @@
                   <p>The Perfect Cup is a website for a fictional coffee shop in Beverly Hills, California. It features information on the shop, its management, and its products, and provides a means of contact via geolocation and a form. In addition to
                      these, the site features a members-only blog which supports user creation, login, and validation.
                   </p>
+               </div>
+               <div class='rows'>
+               <div id='w40'>
+                  <h2> <a href='https://github.com/gsmpopovic/quantum-leap' target="_blank"> <i class="fab fa-github-square"></i> Quantum Leap</a></h2>
+                  <p>Quantum Leap is a website for a vegetarian restaurant in Manhattan's Lower East side. It features information on the restaurant, a gallery of its menu items, and a contact page which supports SQL and NoSQL storsge.</p>
                </div>
             </div>
          </div>

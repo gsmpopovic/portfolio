@@ -9,7 +9,7 @@
    </head>
    <body>
    <header>
-            <?php include('nav.php')?>
+            <?php include_once('./assets/inc/nav.php')?>
          <h1 class='h'>About Me</h1>
 
 </header>

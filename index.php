@@ -12,7 +12,7 @@
    </head>
    <body>
       <header>
-         <?php include("nav.php")?>
+         <?php include_once("./assets/inc/nav.php")?>
       </header>
       <main>
          <div>

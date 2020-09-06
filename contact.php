@@ -11,7 +11,7 @@
    </head>
    <body>
       <header>
-         <?php include("nav.php")?>
+         <?php include_once("./assets/inc/nav.php")?>
          <h1 class="h">Contact</h1>
       </header>
       <main>
@@ -20,7 +20,7 @@
             <div class="center">
                <h2>If you'd like to send me a message,</h2>
                <p class="rq"> all fields are required</p>
-               <form action="process.php" method="POST">
+               <form action="./assets/inc/process.php" method="POST">
                   <label>First name
                   <br>
                   <input type="text" name="firstName"placeholder="Enter your first name" id="p10" required></label>
